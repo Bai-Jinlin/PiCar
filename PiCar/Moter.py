@@ -15,6 +15,7 @@ class Moter(object):
     def cleanpin(self):
         for pin in self.pins:
             GPIO.output(pin,GPIO.LOW)
+        
 
     def forword(self):
         self.cleanpin()
